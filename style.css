@@ -1,0 +1,454 @@
+
+/* ESTILOS CALCULADORA PAGINA */
+.head {
+    padding: 10px 40px;
+    position: relative;
+}
+.container {
+    max-width: 1024px;
+    margin: auto;
+}
+.container form {
+    display: flex;
+
+}
+/* TABLE */
+table {
+    text-align: center;
+    margin: auto;
+    border-collapse: collapse;
+    color: #fff;
+    background: rgba(224, 210, 210, 0.65);
+    width: 80%;
+    box-shadow: -2px 0px 34px -1px rgba(54,53,53,0.65);
+    -webkit-box-shadow: -2px 0px 34px -1px rgba(54,53,53,0.65);
+    -moz-box-shadow: -2px 0px 34px -1px rgba(54,53,53,0.65);
+    margin-top: 2px;
+}
+table thead {
+    background: rgb(236 100 7);
+}
+table tbody {
+    background: #004593;
+}
+table thead th,
+table tbody td {
+    border: 1px solid;
+    padding: 10px 15px;
+}
+.table-wrapper {
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .table-wrapper table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table-wrapper td,
+  .table-wrapper th {
+    padding: 8px;
+    border: 1px solid #ccc;
+  }
+table.rounded-table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+table.rounded-table th:first-child {
+  border-top-left-radius: 10px;
+}
+
+table.rounded-table th:last-child {
+  border-top-right-radius: 10px;
+}
+
+table.rounded-table td:first-child {
+  border-bottom-left-radius: 10px;
+}
+
+table.rounded-table td:last-child {
+  border-bottom-right-radius: 10px;
+}
+    
+input {
+    width: 60%;
+    height: 25px;
+    padding: 2px 10px;
+    border: none;
+    font-family: 'Noto Sans Mono', monospace;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Paprika', cursive;
+    font-family: 'Poppins', Bold 700;
+    border-radius: 10px;
+}
+input[type=number] {
+    text-align: center;
+}
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"]:disabled {
+    background: none;
+}
+input[name="promedio"] {
+    height: 40px;
+    width: 100%;
+    font-size: 2.5em;
+    padding: 0;
+}
+.cont-pro {
+    width: 20%;
+    text-align: center;
+}
+.cont-pro h1 {
+    font-size: 1.6em;
+}
+.txt-left {
+    text-align: left;
+}
+.icon img {
+    width: 70%;
+    margin-bottom: 10px;
+}
+.head .clearfix > a {
+    float: right;
+/*  position: absolute;
+    right: 10%;
+    top: 50%;*/
+    color: #218587;
+    font-size: 1.2em;
+}
+article section {
+    padding-bottom: 40px;
+}
+/*LINEAS VERSION 3.0*/
+span {
+    display: inline-block;
+    padding: 5px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+tbody td:nth-child(2) {
+    position: relative;
+}
+tbody tr:nth-child(2) {
+    height: 50px;
+}
+
+/* BUTTOMS */
+
+.btnFinal {
+    color: #fff;
+    border: 1px solid #071b33;
+    padding-inline: 15px;
+    border-radius: 30px;
+    font-family: ;
+    background: #071b33;
+    transition: background-color 0.3s ease;
+}
+.btnFinal:hover {
+    color: #000000;
+    background: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 30px;
+    font-family: ;
+}
+
+.btnClear {
+    color: #fff;
+    border: 1px solid #071b33;
+    padding-inline: 15px;
+    border-radius: 30px;
+    font-family: ;
+    background: #071b33;
+    transition: background-color 0.3s ease;
+}
+.btnClear:hover {
+    color: #000000;
+    background: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 30px;
+    font-family: ;
+}
+.btnRefresh {
+    color: #fff;
+    border: 1px solid #071b33;
+    padding-inline: 15px;
+    border-radius: 30px;
+    font-family: ;
+    background: #071b33;
+    transition: background-color 0.3s ease;
+    margin-top: 0.5em;
+}
+.btnClear:hover {
+    color: #000000;
+    background: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 30px;
+    font-family: ;
+}
+
+.disabled, .btnFinal.disabled {
+    display: none;
+}
+.clearfix:after {
+    content: '';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+a {
+    text-decoration: none;
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (min-width: 768px) and (max-width: 960px) {
+    table {
+        font-size: 0.9em;
+    }
+    .cont-pro {
+        font-size: 0.9em;
+        padding: 10px;
+    }
+    form .btnFinal {
+        left: 25%; 
+    }
+    form .btnFinal {
+        left: 25%; 
+    }
+    .btnFinal{
+        margin-bottom: 8px;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    table {
+        font-size: 0.9em;
+    }
+    .cont-pro {
+        font-size: 0.9em;
+        padding: 10px;
+    }
+    form .btnFinal {
+        left: 25%; 
+    }
+    form .btnFinal {
+        left: 25%; 
+    }
+    .btnFinal{
+        margin-bottom: 8px;
+    }
+}
+@media screen and (min-width: 425px) and (max-width: 600px) {
+    .clearfix {
+        text-align: center;
+    }
+    .clearfix a {
+        float: none;
+    }
+    .head ul {
+        list-style: none;
+        padding: 0;
+        text-align: justify;
+        font-size: 0.95em;
+    }
+    .container form {
+        display: block;
+    }
+    table, .cont-pro {
+        width: 100%;
+    }
+    thead tr th:nth-child(2),
+    tbody tr td:nth-child(2) {
+        display: none;
+    }
+    .icon img {
+        width: 20%;
+    }
+    .btnFinal{
+        margin-bottom: 8px;
+    }
+}
+@media screen and (min-width: 375px) and (max-width: 425px) {
+    .clearfix {
+        font-size: 0.8em;
+        text-align: center;
+    }
+    .clearfix a {
+        float: none;
+    }
+    .container form {
+        display: block;
+    }
+    table, .cont-pro {
+        width: 100%;
+    }
+    thead tr th:nth-child(2),
+    tbody tr td:nth-child(2) {
+        display: none;
+    }
+    .head ul {
+        list-style: none;
+        padding: 0;
+        text-align: justify;
+        font-size: 0.9em;
+    }
+    .icon img {
+        width: 20%;
+    }
+}
+
+    /* AÑADE EL CSS RESPONSIVE AQUÍ */
+    @media screen and (max-width: 320px) {
+      /* Modificar el ancho de la tabla para que ocupe el 100% del contenedor */
+      table {
+        width: 100%;
+      }
+
+      /* Ajustar el tamaño de los input en la tabla */
+      input {
+        width: 100%;
+      }
+
+      /* Alinear el contenido de la tabla al centro */
+      table thead th,
+      table tbody td {
+        text-align: center;
+      }
+
+      /* Alinear el contenido de la última celda de la tabla al centro */
+      tbody td:last-child {
+        text-align: center;
+      }
+
+      /* Ajustar el tamaño del input de promedio */
+      input[name="promedio"] {
+        font-size: 0.5em;
+        text-align: center;
+      }
+
+      /* Modificar el tamaño de la imagen en el encabezado */
+      .icon img {
+        width: 50%;
+        margin-bottom: 10px;
+      }
+      .container form {
+          display: block;
+      }
+      table, .cont-pro {
+          width: 100%;
+      }
+      thead tr th:nth-child(2),
+      tbody tr td:nth-child(2) {
+          display: none;
+      }
+      input {
+        width: 60%;
+        height: 25px;
+        padding: 2px 10px;
+        border: none;
+        font-family: 'Noto Sans Mono', monospace;
+        font-family: 'Pacifico', cursive;
+        font-family: 'Paprika', cursive;
+        font-family: 'Poppins', Bold 700;
+        border-radius: 10px;
+       }
+      .container form {
+        width: 100%;
+        margin: auto;  
+        box-sizing: border-box;
+      }
+
+      .cont-pro h1 {
+          font-size: 1.6em;
+      }
+      .txt-left {
+          text-align: left;
+      }
+      .icon img {
+          width: 70%;
+          margin-bottom: 10px;
+        
+      } 
+    thead tr th:nth-child(3),
+        tbody tr td:nth-child(3) {
+            display: none;
+        }
+  }
+@media screen and (min-width: 320px) and (max-width: 375px) {
+    .clearfix {
+        font-size: 0.7em;
+        text-align: center;
+    }
+    .clearfix a {
+        float: none;
+    }
+    .container form {
+        display: block;
+    }
+    table, .cont-pro {
+      width: 170%;
+    }
+    thead tr th:nth-child(2),
+    tbody tr td:nth-child(2) {
+        display: none;
+    }
+    .head ul {
+        list-style: none;
+        padding: 0;
+        text-align: justify;
+        font-size: 0.8em;
+    }
+    .icon img {
+        width: 20%;
+    }
+    table thead th,
+    table tbody td {
+        border: 1px solid;
+        padding: 10px;
+    }
+
+
+    @media screen (max-width: 320px) {
+      .clearfix {
+          font-size: 0.7em;
+          text-align: center;
+      }
+      .clearfix a {
+          float: none;
+      }
+      .container form {
+          display: block;
+      }
+      table, .cont-pro {
+          width: 100%;
+      }
+      thead tr th:nth-child(2),
+      tbody tr td:nth-child(2) {
+          display: none;
+      }
+      .head ul {
+          list-style: none;
+          padding: 0;
+          text-align: justify;
+          font-size: 0.8em;
+      }
+      .icon img {
+          width: 20%;
+      }
+      table thead th,
+      table tbody td {
+          border: 1px solid;
+          padding: 10px;
+      }
+           
+
+}
+
+    
